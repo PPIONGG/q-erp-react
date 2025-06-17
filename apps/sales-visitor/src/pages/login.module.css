@@ -28,10 +28,10 @@
 .logo {
   width: 120px;
   height: 120px;
-  /* filter: brightness(0) saturate(100%) invert(24%) sepia(97%) saturate(7499%) hue-rotate(357deg) brightness(91%) contrast(113%); */
+  filter: brightness(0) saturate(100%) invert(24%) sepia(97%) saturate(7499%) hue-rotate(357deg) brightness(91%) contrast(113%);
 }
 
-/* .title {
+.title {
   text-align: center;
   color: #cc0000 !important;
   font-weight: 600 !important;
@@ -39,7 +39,7 @@
   font-size: 24px !important;
   text-transform: uppercase;
   letter-spacing: 1px;
-} */
+}
 
 .loginForm {
   background-color: #ffffff;

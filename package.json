@@ -2,7 +2,14 @@
   "name": "@q-erp-react/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+    "scripts": {
+    "start": "nx serve shell",
+    "start:shell": "nx serve shell",
+    "start:attendance": "nx serve q-attendance --port=4201",
+    "start:sales": "nx serve sales-visitor --port=4202",
+    "start:all": "concurrently \"nx serve shell\" \"nx serve q-attendance --port=4201\" \"nx serve sales-visitor --port=4202\"",
+    "build:all": "nx run-many --target=build --projects=shell,q-attendance,sales-visitor"
+  },
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^6.0.0",
@@ -33,6 +40,7 @@
     "@vitejs/plugin-react": "^4.2.0",
     "@vitest/ui": "^3.0.0",
     "ajv": "^8.0.0",
+    "concurrently": "^9.1.2",
     "eslint": "^9.8.0",
     "eslint-config-prettier": "^10.0.0",
     "eslint-plugin-import": "2.31.0",
@@ -52,6 +60,7 @@
   },
   "workspaces": [
     "apps/*",
-    "libs/*"
+    "libs/*",
+    "shell"
   ]
 }

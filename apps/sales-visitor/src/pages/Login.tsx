@@ -8,7 +8,7 @@ import {
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '@q-erp-react/auth';
 import { ThemeProvider } from '@q-erp-react/shared';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo-sales-visitor.png';
 import styles from './login.module.css';
 
 const { Title, Text } = Typography;
@@ -46,9 +46,9 @@ export const LoginPage: React.FC = () => {
             <div className={styles.logoWrapper}>
               <img src={logo} alt="" className={styles.logo} />
             </div>
-            {/* <Title level={3} className={styles.title}>
-              Q-ERP
-            </Title> */}
+            <Title level={3} className={styles.title}>
+              sales visitor
+            </Title>
             <Form
               name="login"
               className={styles.loginForm}
