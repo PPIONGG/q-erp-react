@@ -1,0 +1,306 @@
+.pageContainer {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(204, 0, 0, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(204, 0, 0, 0.03) 0%, transparent 50%);
+}
+
+.loginContainer {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.loginBox {
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.logoWrapper {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  /* filter: brightness(0) saturate(100%) invert(24%) sepia(97%) saturate(7499%) hue-rotate(357deg) brightness(91%) contrast(113%); */
+}
+
+/* .title {
+  text-align: center;
+  color: #cc0000 !important;
+  font-weight: 600 !important;
+  margin-bottom: 14px !important;
+  font-size: 24px !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+} */
+
+.loginForm {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 32px 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.passwordLabel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.input {
+  background-color: #fafafa;
+  border-color: #e0e0e0;
+  color: #333333;
+  transition: all 0.3s ease;
+}
+
+.input:hover {
+  background-color: #ffffff;
+  border-color: #cc0000;
+}
+
+.input:focus {
+  background-color: #ffffff;
+  border-color: #cc0000;
+  box-shadow: 0 0 0 2px rgba(204, 0, 0, 0.1);
+}
+
+.input::placeholder {
+  color: #999999;
+}
+
+/* Override Ant Design input styles for Light Theme */
+:global(.ant-input-affix-wrapper) {
+  background-color: #fafafa;
+  border-color: #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+:global(.ant-input-affix-wrapper:hover) {
+  background-color: #ffffff;
+  border-color: #cc0000;
+}
+
+:global(.ant-input-affix-wrapper:focus),
+:global(.ant-input-affix-wrapper-focused) {
+  background-color: #ffffff;
+  border-color: #cc0000;
+  box-shadow: 0 0 0 2px rgba(204, 0, 0, 0.1);
+}
+
+:global(.ant-input-prefix) {
+  color: #cc0000;
+}
+
+:global(.ant-input) {
+  background-color: transparent;
+}
+
+/* .forgotLink {
+  color: #cc0000;
+  font-size: 13px;
+  font-weight: 400;
+  transition: all 0.2s ease;
+}
+
+.forgotLink:hover {
+  color: #990000;
+  text-decoration: underline;
+} */
+
+.loginButton {
+  background-color: #cc0000;
+  border-color: #cc0000;
+  font-weight: 600;
+  height: 42px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(204, 0, 0, 0.2);
+}
+
+.loginButton:hover,
+.loginButton:focus {
+  background-color: #b30000;
+  border-color: #b30000;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(204, 0, 0, 0.3);
+}
+
+/* .divider {
+  text-align: center;
+  margin: 24px 0;
+  position: relative;
+}
+
+.divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #e0e0e0;
+}
+
+.divider span {
+  background-color: #ffffff;
+  padding: 0 16px;
+  color: #999999;
+  position: relative;
+  font-size: 13px;
+} */
+
+/* .passKeyButton {
+  background-color: #ffffff;
+  border: 2px solid #cc0000;
+  color: #cc0000;
+  height: 42px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.passKeyButton:hover {
+  background-color: #fff5f5;
+  border-color: #b30000;
+  color: #b30000;
+  transform: translateY(-1px);
+} */
+
+/* .registerBox {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.registerBox :global(.ant-typography) {
+  color: #666666;
+}
+
+.registerBox a {
+  color: #cc0000;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.registerBox a:hover {
+  color: #990000;
+  text-decoration: underline;
+} */
+
+/* Light theme for form labels */
+:global(.ant-form-item-label > label) {
+  color: #333333;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* Error messages */
+:global(.ant-form-item-explain-error) {
+  color: #ff4d4f;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* Remove asterisk from required fields */
+:global(.ant-form-item-required::before) {
+  display: none !important;
+}
+
+/* ✅ Autofill Fix for Chrome - Light Theme */
+:global(input:-webkit-autofill),
+:global(input:-webkit-autofill:hover),
+:global(input:-webkit-autofill:focus),
+:global(input:-webkit-autofill:active) {
+  box-shadow: 0 0 0px 1000px #fafafa inset !important;
+  -webkit-text-fill-color: #333333 !important;
+  transition: background-color 9999s ease-in-out 0s;
+  caret-color: #333333;
+}
+
+/* Additional styling for better UX */
+:global(.ant-btn-loading) {
+  opacity: 0.8;
+}
+
+:global(.ant-form-item) {
+  margin-bottom: 20px;
+}
+
+:global(.ant-form-item:last-child) {
+  margin-bottom: 0;
+}
+
+/* Focus states */
+:global(.ant-input:focus),
+:global(.ant-input-focused) {
+  border-color: #cc0000;
+  box-shadow: 0 0 0 2px rgba(204, 0, 0, 0.1);
+}
+
+/* Button states */
+:global(.ant-btn-primary:active) {
+  background-color: #990000;
+  border-color: #990000;
+}
+
+/* Red accent for icons when focused */
+:global(.ant-input-affix-wrapper-focused .ant-input-prefix) {
+  color: #cc0000;
+}
+
+:global(.ant-select-selector) {
+  background-color: #fafafa !important;
+  border-color: #e0e0e0 !important;
+  transition: all 0.3s ease;
+}
+
+:global(.ant-select:hover .ant-select-selector) {
+  background-color: #ffffff !important;
+  border-color: #cc0000 !important;
+}
+
+:global(.ant-select-focused .ant-select-selector),
+:global(.ant-select-selector:focus) {
+  background-color: #ffffff !important;
+  border-color: #cc0000 !important;
+  box-shadow: 0 0 0 2px rgba(204, 0, 0, 0.1) !important;
+}
+
+/* Select dropdown arrow color */
+:global(.ant-select-arrow) {
+  color: #cc0000;
+}
+
+/* Select placeholder */
+:global(.ant-select-selection-placeholder) {
+  color: #999999;
+}
+
+/* Select dropdown */
+:global(.ant-select-dropdown) {
+  border-radius: 8px;
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08);
+}
+
+/* Select option hover */
+:global(.ant-select-item-option-selected) {
+  background-color: #fff5f5;
+  color: #cc0000;
+}
+
+:global(.ant-select-item-option:hover) {
+  background-color: #fff5f5;
+}

@@ -1,13 +1,12 @@
-// Uncomment this line to use CSS modules
-// import styles from './app.module.css';
-import NxWelcome from './nx-welcome';
+import { RouterProvider } from 'react-router-dom';
+import { AuthProvider } from '@q-erp-react/auth';
+import { router } from '../routes';
+import './../styles/global.css';
 
 export function App() {
   return (
-    <div>
-      <NxWelcome title="@q-erp-react/sales-visitor" />
-    </div>
+    <AuthProvider>
+      <RouterProvider router={router} future={{ v7_startTransition: true }} />
+    </AuthProvider>
   );
 }
-
-export default App;

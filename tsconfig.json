@@ -8,6 +8,15 @@
     },
     {
       "path": "./apps/sales-visitor"
+    },
+    {
+      "path": "./libs/ui-components"
+    },
+    {
+      "path": "./libs/auth"
+    },
+    {
+      "path": "./libs/shared"
     }
   ]
 }
